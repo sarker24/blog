@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :recipes
+  resources :products
   root 'home#index'
 
 get 'show' => 'home#delete'
